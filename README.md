@@ -220,3 +220,7 @@
  - 내부함수에서의 this를 우회하는 방법
  - outer 함수 내에서 var self = this; 코드를 통해 outer가 호출될 때의 this를 self 변수에 미리 저장
  - console.log(self)는 outer 함수의 this 값이었던 obj를 출력
+
+### EX 3-11
+ - ES6에서 도입된 화살표 함수를 사용하여 메서드 내부 함수의 this 문제를 해결하는 방법
+ - 화살표 함수는 일반 함수와 달리 자신만의 this를 바인딩하지 않고, 대신 함수가 정의될 때의 상위 스코프의 this를 그대로 물려받아 사용
