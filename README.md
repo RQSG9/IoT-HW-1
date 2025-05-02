@@ -303,3 +303,9 @@
  - 화살표 함수 내부에서의 this
  - 예제 2-27에서 내부 함수를 화살표 함수로 바꾼 예제
  - this를 우회하거나 call/apply/bind를 적용할 필요가 없어 간결
+
+### EX 3-30
+ - thisArg를 인자로 받는 경우 예시: forEach 메서드
+ - forEach를 포함한 일부 배열 메서드가 콜백 함수와 더불어 this로 사용될 값을 지정하는 thisArg를 받을 수 있다는 점을 보여줌
+ - report.add 메서드 내에서 args.forEach를 호출할 때, 두 번째 인자로 this(이 시점에서는 report 객체)를 전달
+ - 그 내부의 this는 report 객체를 가리키며, this.sum과 this.count는 report의 속성에 접근하고 수정
