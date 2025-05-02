@@ -267,3 +267,8 @@
  - call/apply 메서드의 활용: 생성자 내부에서 다른 생성자를 호출
  - Student나 Employee가 new로 호출될 때, 그 내부의 this(새로 생성된 인스턴스)를 Person.call 또는 Person.apply의 첫 번째 인자로 넘겨 Person 함수를 실행
  - Person 함수 내의 this.name, this.gender 할당 코드가 Student 또는 Employee의 인스턴스에 적용되어, 공통 부분을 효율적으로 처리
+
+### EX 3-22
+ - 최대/최솟값을 구하는 코드를 직접 구현
+ - max와 min 변수를 배열의 첫 번째 요소로 초기화한 후, 배열의 모든 요소를 하나씩 확인하며 현재의 max보다 크거나 min보다 작으면 해당 변수를 갱신
+ - 반복문이 완료되면 max에는 최댓값이, min에는 최솟값이 최종적으로 저장
