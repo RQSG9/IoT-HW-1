@@ -249,3 +249,7 @@
 ### EX 3-17
  - call/apply 메서드의 활용: 유사배열객체에 배열 메서드를 적용
  - 유사 배열 객체는 실제 배열이 아니므로 직접 .push() 등을 호출할 수 없지만, call 또는 apply를 사용하면 obj에 배열 메서드를 실행할 수 있음
+
+### EX 3-18
+ - call/apply 메서드의 활용: arguments, NodeList에 배열 메서드를 적용
+ - arguments, NodeList도 유사 배열 객체이므로 call 또는 apply를 통해 배열 메서드 사용 가능
