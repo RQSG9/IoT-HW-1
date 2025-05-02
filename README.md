@@ -224,3 +224,9 @@
 ### EX 3-11
  - ES6에서 도입된 화살표 함수를 사용하여 메서드 내부 함수의 this 문제를 해결하는 방법
  - 화살표 함수는 일반 함수와 달리 자신만의 this를 바인딩하지 않고, 대신 함수가 정의될 때의 상위 스코프의 this를 그대로 물려받아 사용
+
+### EX 3-12
+ - 콜백 함수 내부에서의 this
+ - 이 예제는 setTimeout, 배열 메서드 forEach, 이벤트 리스너 addEventListener 등에서 사용되는 콜백 함수 내부의 this가 어떻게 결정되는지 보여줌
+ - setTimeout이나 forEach와 같은 경우, 콜백 함수 내 this는 전역 객체를 가리킴
+ - addEventListener의 경우 콜백 함수 내 this는 이벤트가 발생한 요소를 가리킴
