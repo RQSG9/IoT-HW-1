@@ -215,3 +215,8 @@
  - outer 메서드가 호출될 때 그 안의 this는 obj1을 가리키지만, 그 안의 innerFunc가 일반 함수로서 호출될 때 innerFunc 내부의 this는 전역 객체(window/global)를 가리킴
  - 내부 함수는 자신을 감싸는 외부 함수의 this를 자동으로 상속받지 않음
  - 동일한 innerFunc를 obj2의 메서드로 할당하고 메서드로서 호출하면, 그때 innerFunc 내부의 this는 호출 주체인 obj2를 가리킴
+
+### EX 3-10
+ - 내부함수에서의 this를 우회하는 방법
+ - outer 함수 내에서 var self = this; 코드를 통해 outer가 호출될 때의 this를 self 변수에 미리 저장
+ - console.log(self)는 outer 함수의 this 값이었던 obj를 출력
