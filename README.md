@@ -162,3 +162,7 @@
  - 자바스크립트 엔진이 변수를 찾을 때 Lexical Environment에서 시작하여 outerEnvironmentReference를 따라 상위 Lexical Environment으로 이동하며 순차적으로 검색하는 스코프 체인의 동작 원리
  - inner 함수 내에서는 자신의 environmentRecord에서 호이스팅된 지역 변수 a를 발견하므로 검색을 멈추고 undefined를 출력
  - outer 함수 내에서는 자신의 environmentRecord에 a가 없어 outerEnvironmentReference가 가리키는 global Lexical Environment에서 a를 찾아 값 1을 출력
+
+### EX 2-14
+ - 크롬 개발자 도구 등에서 함수의 스코프 체인을 시각적으로 확인하는 방법
+ - 크롬 개발자 도구에서 outer 스코프에 inner 변수만 노출됨
