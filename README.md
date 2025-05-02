@@ -261,5 +261,9 @@
  - push와 같이 원본을 변경해야 하는 메서드는 문자열의 불변성과 읽기 전용 length 속성 때문에 에러가 발생하거나 의도대로 동작하지 않음
 
 ### EX 3-20
- - call/apply 메서드의 활용: ES6의 Array.from 메서드
- - Array.from 메서드를 이용해 유사 배열 객체를 실제 배열로 변환할 수 있음
+ - ES6의 Array.from 메서드를 이용해 유사 배열 객체를 실제 배열로 변환할 수 있음
+
+### EX 3-21
+ - call/apply 메서드의 활용: 생성자 내부에서 다른 생성자를 호출
+ - Student나 Employee가 new로 호출될 때, 그 내부의 this(새로 생성된 인스턴스)를 Person.call 또는 Person.apply의 첫 번째 인자로 넘겨 Person 함수를 실행
+ - Person 함수 내의 this.name, this.gender 할당 코드가 Student 또는 Employee의 인스턴스에 적용되어, 공통 부분을 효율적으로 처리
