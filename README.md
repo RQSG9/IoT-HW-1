@@ -230,3 +230,7 @@
  - 이 예제는 setTimeout, 배열 메서드 forEach, 이벤트 리스너 addEventListener 등에서 사용되는 콜백 함수 내부의 this가 어떻게 결정되는지 보여줌
  - setTimeout이나 forEach와 같은 경우, 콜백 함수 내 this는 전역 객체를 가리킴
  - addEventListener의 경우 콜백 함수 내 this는 이벤트가 발생한 요소를 가리킴
+
+### EX 3-13
+ - 생성자 함수 내부에서의 this
+ - 생성자 함수가 new와 함께 호출되면, 먼저 빈 객체가 생성되고 함수 내부 코드가 실행될 때 this는 바로 이 새로 생성된 인스턴스 객체를 가리킴
