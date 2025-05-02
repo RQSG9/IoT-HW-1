@@ -293,3 +293,8 @@
  - 내부 함수에 this를 전달할 때, call과 bind의 비교
  - 첫 번째 방법은 내부 함수를 호출하는 시점에 innerFunc.call(this)와 같이 call을 사용하여 외부 함수의 this를 명시적으로 주입
  - 두 번째 방법은 내부 함수를 정의하는 시점에 .bind(this)를 사용하여 this가 외부 함수의 this로 영구히 고정된 새로운 함수를 생성하여 변수에 할당한 후, 이 함수를 나중에 호출
+
+### EX 3-28
+ - 객체의 메서드를 setTimeout 같은 콜백으로 전달할 때 this 컨텍스트를 잃는 문제와 이를 bind 메서드로 해결하는 방법
+ - logThisLater1처럼 메서드를 직접 setTimeout의 콜백으로 전달하면, 나중에 콜백이 실행될 때 this는 원래 객체가 아닌 전역 객체를 가리킴
+ - logThisLater2처럼 메서드에 .bind(this)를 호출하여 this가 obj로 고정된 새로운 함수를 생성하고 이 함수를 콜백으로 전달하면, 나중에 콜백이 실행되어도 this는 obj를 유지
