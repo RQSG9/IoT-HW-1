@@ -209,3 +209,9 @@
 ### EX 3-8
  - 메서드 내부에서의 this
  - 메서드 호출 시 this는 항상 메서드(함수) 이름 바로 앞의 객체를 가리킴, 그 메서드를 호출한 주체가 this가 됨
+
+### EX 3-9
+ - 메서드 내부함수에서의 this
+ - outer 메서드가 호출될 때 그 안의 this는 obj1을 가리키지만, 그 안의 innerFunc가 일반 함수로서 호출될 때 innerFunc 내부의 this는 전역 객체(window/global)를 가리킴
+ - 내부 함수는 자신을 감싸는 외부 함수의 this를 자동으로 상속받지 않음
+ - 동일한 innerFunc를 obj2의 메서드로 할당하고 메서드로서 호출하면, 그때 innerFunc 내부의 this는 호출 주체인 obj2를 가리킴
