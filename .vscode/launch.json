@@ -11,7 +11,7 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}\\EX 3-23.js",
+            "program": "${workspaceFolder}\\EX 3-24.js",
             "console": "integratedTerminal"
         }
     ]
