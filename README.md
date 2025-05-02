@@ -157,3 +157,8 @@
  - 예제 2-11과 동일한 상황에서 함수 정의 방식을 함수 표현식으로 변경했을 때 어떻게 달라지는지 보여주는 예제
  - 함수 표현식은 변수 선언만 호이스팅되므로, 함수가 실제로 할당되기 전에 호출하면 즉시 TypeError가 발생하여 문제를 조기에 발견할 수 있음
  - 함수 표현식은 함수의 사용 가능 시점을 명확히 하고 호이스팅으로 인한 혼란을 줄여주어 잠재적인 버그를 예방하는 데 더 안전한 방식으로 간주될 수 있음
+
+### EX 2-13
+ - 자바스크립트 엔진이 변수를 찾을 때 Lexical Environment에서 시작하여 outerEnvironmentReference를 따라 상위 Lexical Environment으로 이동하며 순차적으로 검색하는 스코프 체인의 동작 원리
+ - inner 함수 내에서는 자신의 environmentRecord에서 호이스팅된 지역 변수 a를 발견하므로 검색을 멈추고 undefined를 출력
+ - outer 함수 내에서는 자신의 environmentRecord에 a가 없어 outerEnvironmentReference가 가리키는 global Lexical Environment에서 a를 찾아 값 1을 출력
