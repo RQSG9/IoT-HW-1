@@ -298,3 +298,8 @@
  - 객체의 메서드를 setTimeout 같은 콜백으로 전달할 때 this 컨텍스트를 잃는 문제와 이를 bind 메서드로 해결하는 방법
  - logThisLater1처럼 메서드를 직접 setTimeout의 콜백으로 전달하면, 나중에 콜백이 실행될 때 this는 원래 객체가 아닌 전역 객체를 가리킴
  - logThisLater2처럼 메서드에 .bind(this)를 호출하여 this가 obj로 고정된 새로운 함수를 생성하고 이 함수를 콜백으로 전달하면, 나중에 콜백이 실행되어도 this는 obj를 유지
+
+### EX 3-29
+ - 화살표 함수 내부에서의 this
+ - 예제 2-27에서 내부 함수를 화살표 함수로 바꾼 예제
+ - this를 우회하거나 call/apply/bind를 적용할 필요가 없어 간결
