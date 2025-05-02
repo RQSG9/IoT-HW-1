@@ -253,3 +253,9 @@
 ### EX 3-18
  - call/apply 메서드의 활용: arguments, NodeList에 배열 메서드를 적용
  - arguments, NodeList도 유사 배열 객체이므로 call 또는 apply를 통해 배열 메서드 사용 가능
+
+### EX 3-19
+ - call/apply 메서드의 활용: 문자열에 배열 메서드 적용
+ - 문자열도 length와 숫자 인덱스를 가진 유사 배열 객체의 특징을 가지므로, call 또는 apply를 통해 배열 메서드 일부를 사용 가능
+ - every, some, map, reduce 등 원본 문자열을 변경하지 않는 배열 메서드들은 문자열에 적용하여 각 문자를 요소처럼 다룰 수 있음
+ - push와 같이 원본을 변경해야 하는 메서드는 문자열의 불변성과 읽기 전용 length 속성 때문에 에러가 발생하거나 의도대로 동작하지 않음
